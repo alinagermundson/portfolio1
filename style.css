@@ -1,0 +1,309 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #efa286;
+	font-size: 16px;
+}
+
+#wrapper {
+	width: 100%;
+	height: 800px;
+}
+
+#navigation {
+	width: 100%;
+	height: 100px;
+}
+
+#logo {
+	width: 20%;
+	height: 64px;
+	float: left;
+	margin-left: 5%;
+	margin-top: 2.5%;
+}
+
+#nav {
+	width: 55%;
+	float: right;
+	margin-right: 5%;
+	margin-top: 2%;
+	list-style: none;
+	}
+
+#nav li {
+	float: right; 
+}
+
+#nav li a {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	font-family: 'Karla', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+	color: #FFF;
+}
+
+#nav li a:hover {
+	color: #72577e;
+	text-decoration: underline;
+}
+
+#header{
+	width: 100%;
+	height: 600px;
+	font-family: 'Playfair Display', serif;
+	color: #0d466e;
+	text-align: center;
+	line-height: 90%;
+	padding-top: 100px;
+}
+
+#header h1 {
+	font-size: 130px;
+	margin-bottom: 130px;
+}
+
+#header h3 {
+	font-size: 60px;
+}
+
+#header p {
+	font-size: 20px;
+}
+
+#arrow {
+	margin-bottom: 80px;
+}
+
+/* bouncearrow start*/
+#bouncearrow {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 40px;
+	padding: 50px 0px;
+}
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  background-image: url(https://image.flaticon.com/icons/svg/319/319873.svg);
+  /*should be able to change this picture to any arrow and make it the same*/
+  background-size: contain;
+}
+
+.bounce {
+  -moz-animation: bounce 4s infinite;
+  -webkit-animation: bounce 4s infinite;
+  animation: bounce 4s infinite;
+}
+
+/*bouncearrow stop*/
+
+.portfolio {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 600px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#portfolio_work{
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 900px;
+	height: 600px;
+}
+
+/*start*/
+
+.overlaycontainer {
+  position: relative;
+  width: 50%;
+width: 295px;
+height: 295px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #6C5B7C;
+}
+
+.overlaycontainer:hover .overlay {
+  opacity: 1;
+}
+
+.overlaytext {
+color: white;
+	font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/*stop*/
+
+#about {
+	width: 100%;
+	height: 300px;
+	background-color: #efa286;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+#about h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 24px;
+	color: #0d466e;
+}
+
+#about p {
+	font-family: 'Karla', sans-serif;
+	font-size: 18px;
+	color: #FFF;
+	line-height: 130%
+}
+
+.about_txt {
+	width: 500px;
+	height: 300px;
+	padding-right: 90px;
+}
+
+.about_contact {
+	width: 200px;
+	height: 300px;
+	padding-left: 30px;
+}
+
+#resume {
+	width: 100%;
+	height: 600px;
+	text-align: center;
+}
+
+#resume h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 24px;
+	color: #0d466e;
+}
+
+#resume p {
+	font-family: 'Karla', sans-serif;
+	font-size: 18px;
+	color: #FFF;
+}
+
+/*cases*/
+#casesite {
+	width: 100%;
+	height: 1000px;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+#casesite img {
+	width: 700px;
+}
+
+#casesite h3 {
+	font-family: 'Playfair Display', serif;
+	font-size: 24px;
+	color: #0d466e;
+	margin-top: 30px;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+
+#casesite_txt {
+	width: 700px;
+	font-family: 'Karla', sans-serif;
+	font-size: 18px;
+	color: #FFF;
+	line-height: 130%;
+	margin: 0;
+	padding: 0;
+}
+
+#casesite p {
+	margin: 0;
+	padding: 0;
+}
+
+#casesite_row1 {
+	width: 700px;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
